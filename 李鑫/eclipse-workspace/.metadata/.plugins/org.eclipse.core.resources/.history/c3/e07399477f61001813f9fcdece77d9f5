@@ -1,0 +1,60 @@
+package forget;
+
+import java.awt.Font;
+import java.awt.TextArea;
+import java.awt.TextField;
+
+import javax.swing.Box;
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+
+public class forget extends JFrame {
+	
+	private Box box1=Box.createVerticalBox();
+	private Box box2=Box.createHorizontalBox();
+	private Box box3=Box.createHorizontalBox();
+	private Box box4=Box.createHorizontalBox();
+	private Box box5=Box.createHorizontalBox();
+	private Box box6=Box.createHorizontalBox();
+
+	
+	private JLabel fotpass=new JLabel("忘记密码");
+	private JLabel oldpass=new JLabel("原密码");
+	private JLabel newpass=new JLabel("新密码");
+	
+	private TextArea old=new TextArea(10,10);
+	private TextField new1=new TextField(10);
+	private JButton ok=new JButton("确定");
+	private JButton cancel=new JButton("取消");
+	private JButton fot=new JButton("忘记原密码");
+	private Font f=new Font("宋体",Font.BOLD+Font.ITALIC,60);
+	
+	public forget() {
+		super("图书馆管理系统");
+		System.out.println("忘记密码");
+		this.setSize(1200, 1000);
+		this.setLocation(60,10);
+		this.setVisible(true);
+		fotpass.setFont(f);
+		box2.add(Box.createHorizontalStrut(20));
+		box2.add(fotpass);
+		box3.add(Box.createVerticalStrut(400));
+		box3.add(Box.createHorizontalStrut(100));
+		box3.add(oldpass);box3.add(old);
+		box3.add(Box.createVerticalStrut(410));
+		box3.add(Box.createHorizontalStrut(100));
+		box4.add(newpass);box4.add(new1);
+		box5.add(ok);box5.add(cancel);box5.add(fot);
+		box1.add(box2);
+		box1.add(box3);
+		box1.add(box4);
+		box1.add(box5);
+		this.add(box1);
+		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);//关闭窗口
+	}
+	public static void main(String[] args) {
+		new forget();
+	}
+
+}

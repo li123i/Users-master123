@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main2Activity_delete"
+    android:orientation="vertical">
+<TextView
+    android:layout_marginTop="80dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/delete_top"
+    android:textSize="22sp"
+    android:layout_marginLeft="30dp"
+    android:text="s"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="确定"
+            android:textSize="18sp"
+            android:id="@+id/delete_right"
+            android:layout_marginLeft="50dp"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="取消"
+            android:textSize="18sp"
+            android:id="@+id/delete_cancel"
+            android:layout_marginLeft="50dp"/>
+    </LinearLayout>
+</LinearLayout>

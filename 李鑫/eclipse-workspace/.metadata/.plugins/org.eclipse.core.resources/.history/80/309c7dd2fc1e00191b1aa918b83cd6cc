@@ -1,0 +1,10 @@
+
+public abstract class second {
+
+	void sleep() {
+		System.out.println("请睡觉");
+	}
+	
+	abstract void eat();
+
+}

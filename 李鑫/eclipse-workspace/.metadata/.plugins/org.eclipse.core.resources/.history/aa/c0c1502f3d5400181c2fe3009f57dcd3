@@ -1,0 +1,204 @@
+package DateTime;
+
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.Locale;
+
+public class Datetime {
+
+    	public  static class IDateTime {
+
+    		private int year;
+    		private int month;
+    		private int day;
+    		private int hour;
+    		private int minute;
+    		private int second;
+    		private Date date=new Date(2010-1900,1,10,1,1,1);
+    		public int getYear() {
+    			SimpleDateFormat time=new SimpleDateFormat("yyyy");
+    			String str=time.format(date);
+    			year=Integer.parseInt(str);
+    			return year;
+    		}
+
+    		public int getMonth() {
+    			SimpleDateFormat time=new SimpleDateFormat("MM");
+    			String str=time.format(date);
+    			month=Integer.parseInt(str);
+    			return month;
+    		}
+  
+    		public int getDay() {
+    			SimpleDateFormat time=new SimpleDateFormat("dd");
+    			String str=time.format(date);
+    			day=Integer.parseInt(str);
+    			return day;
+    		}
+    			
+
+    		public int getHour() {
+    				SimpleDateFormat time=new SimpleDateFormat("HH");
+        			String str=time.format(date);
+        			hour=Integer.parseInt(str);
+        			return hour;
+    			}
+
+    		public  int getMinute() {
+    				SimpleDateFormat time=new SimpleDateFormat("mm");
+        			String str=time.format(date);
+        			minute=Integer.parseInt(str);
+        			return minute;
+    			}
+
+    		public	int getSecond() {
+    				SimpleDateFormat time=new SimpleDateFormat("ss");
+        			String str=time.format(date);
+        			second=Integer.parseInt(str);
+        			return second;
+    			}
+
+    		public	void addDays(int days) {
+    			this.day=days+this.day;
+    		}
+
+    		public void addMonths(int months) {
+    			this.month=this.month+months;
+    		}
+
+    		public 	void addYears(int years) {
+    			this.year=years+this.year;
+    		}
+
+    		public 	void addHour(int hours) {
+    			this.hour=this.hour+hours;
+    		}
+
+    		public	void addMinute(int minutes) {
+    			this.minute=this.minute+minutes;
+    		}
+
+    		public	void addSecond(int seconds) {
+    			this.second=this.second+seconds;
+    		}
+
+    			/*
+    			 * 按照dateFormat输出当前日期
+    			 */
+    		public	String dateToString() {
+    			Date date1=new Date();
+    			SimpleDateFormat time=new SimpleDateFormat("yyyy年MM月dd日 HH时mm分ss秒");
+    			return time.format(date1);
+    		}
+
+    			/*
+    			 * 按照dateTimeFormat输出当前日期时间
+    			 */
+    		public	String dateTimeToString() {
+    			Date date1=new Date();
+    			Locale locale=new Locale("zh","CN");
+    			DateFormat time=DateFormat.getDateTimeInstance(DateFormat.FULL,DateFormat.FULL,locale);
+    			return time.format(date1);
+    		}
+    		/*
+    		 * 判断自己是否是闰年ֵ
+    		 */
+    		public boolean isThisLeapYear() {
+    			return (year%4==0&&year%100!=0||year%400==0) ;
+    		}
+
+    		/*
+    		 * 获取指定年月的天数
+    		 */
+    		public int getDaysInMonth(int y, int m) {
+    			int d;
+    		    int day[]= {31,31,30,31,30,31,31,30,31,30,31};
+    		    if (2==m)
+    		    {
+    		        d=(((0==y%4)&&(0!=y%100)||(0==y%400))?29:28);
+    		    }
+    		    else
+    		    {
+    		        d=day[m-1];
+
+    		    }
+    		    return d;
+    		    }
+    		/*
+    		 * 得到俩个日期间的间隔天数
+    		 */
+    		public int getTwoDay(String date1, String date2) {
+    			int a1=Integer.parseInt(date1);
+    			int a2=Integer.parseInt(date2);
+    			return a2-a1;
+    		}
+    		/*
+    		 * 设定日期格式：例(yyyy-MM-dd)
+    		 */
+    		public void setDateFormat(String format) {
+    			SimpleDateFormat time=new SimpleDateFormat(format);
+    			System.out.println(time.format(date));
+    		}
+
+    		/*
+    		 * 设定日期时间格式，例(yyyy-MM-dd HH:mm:ss)
+    		 */
+    		public void setDateTimeFormat(String format) {
+    	        DateFormat time = new SimpleDateFormat(format);
+    			System.out.println(time.format(date));
+    		}
+
+    		/*
+    		 * 调用此方法的对象和指定日期是否相等
+    		 */
+    		public boolean equals(Object date1) {
+    			SimpleDateFormat time=new SimpleDateFormat("yyyy年MM月dd日 HH时mm分ss秒");
+    			String str1=time.format(date);
+    			String str2=time.format(date1);
+    			return str1==str2;
+
+    		}
+    		public Object clone() throws CloneNotSupportedException{
+    			return super.clone();
+    		}
+    	}
+	public static void main(String[] args) {
+		IDateTime datetime=new IDateTime();
+		String str;
+		int a;
+		a=datetime.getYear();
+		System.out.println(a+"年");
+		a=datetime.getMonth();
+		System.out.println(a+"月");
+		a=datetime.getDay();
+		System.out.println(a+"天");
+		a=datetime.getHour();
+		System.out.println(a+"时");
+		a=datetime.getMinute();
+		System.out.println(a+"分");
+		a=datetime.getSecond();
+		System.out.println(a+"秒");
+		str=datetime.dateToString();
+		System.out.println("当前时间是"+str);
+		str=datetime.dateTimeToString();
+		System.out.println("当前时间是"+str);
+		datetime.addYears(1);
+		datetime.addMonths(12);
+		datetime.addDays(1);
+		datetime.addHour(1);
+		datetime.addMinute(1);
+		datetime.addSecond(1);
+		boolean p;
+		p=datetime.isThisLeapYear();
+		System.out.println(p);
+		a=datetime.getTwoDay("1","21");
+		System.out.println("相差天数为"+a);
+		datetime.setDateFormat("yyyy-MM-dd");
+		datetime.setDateTimeFormat("yyyy-MM-dd HH:mm:ss");
+		Date date1=new Date(2010-1900,1,1,1,1,1); 
+		p=datetime.equals(date1);
+		System.out.println(p);
+	}
+}
+

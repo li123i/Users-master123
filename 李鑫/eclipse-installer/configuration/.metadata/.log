@@ -1,0 +1,12 @@
+!SESSION 2018-04-12 20:24:32.702 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_161
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=zh_CN
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data @noDefault
+
+!ENTRY org.eclipse.equinox.p2.repository 4 0 2018-04-12 20:28:27.320
+!MESSAGE An error occurred while downloading http://download.eclipse.org/technology/epp/packages/oxygen/content.xml.xz. The cache file C:\Users\李鑫\.p2\org.eclipse.equinox.p2.repository\cache\downloading\-1747184149 could not be renamed to C:\Users\李鑫\.p2\org.eclipse.equinox.p2.repository\cache\-1747184149.
+
+!ENTRY org.eclipse.equinox.p2.repository 4 0 2018-04-12 20:28:27.323
+!MESSAGE An error occurred while downloading http://download.eclipse.org/technology/epp/packages/oxygen/content.xml.xz. The cache file C:\Users\李鑫\.p2\org.eclipse.equinox.p2.repository\cache\downloading\-1747184149 could not be renamed to C:\Users\李鑫\.p2\org.eclipse.equinox.p2.repository\cache\-1747184149.

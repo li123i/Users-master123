@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/eatwrite_money"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/write_adresstext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:gravity="center_vertical"
+            android:text="购买地址"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/eatwrite_caiaddress"
+            android:layout_width="199dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="23dp"
+            android:background="@drawable/menu"
+            android:hint="购买地址"
+            android:paddingLeft="10dp"
+            android:textSize="20sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/write_nametext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:gravity="center_vertical"
+            android:text="菜单名称"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/eatwrite_cainame"
+            android:layout_width="199dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="23dp"
+            android:background="@drawable/menu"
+            android:hint="菜单名称"
+            android:paddingLeft="10dp"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/write_moneytext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:gravity="center_vertical"
+            android:text="价格"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/eatwrite_caimoney"
+            android:layout_width="199dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="52dp"
+            android:background="@drawable/menu"
+            android:hint="价格"
+            android:paddingLeft="10dp"
+            android:textSize="20sp"
+            tools:ignore="DuplicateIds" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/login_phone_edtPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="手机号"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/login_phone_edtPSD"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="密码"
+            tools:ignore="TextFields" >
+        </EditText>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/login_phone_btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="登陆"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        android:textColor="#ffffff"/>
+    <Button
+        android:id="@+id/login_phone_btnLogin1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="登12"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        android:textColor="#ffffff"/>
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="120dp"
+    android:id="@+id/login_show"
+    android:hint="fdf"/>
+</LinearLayout>

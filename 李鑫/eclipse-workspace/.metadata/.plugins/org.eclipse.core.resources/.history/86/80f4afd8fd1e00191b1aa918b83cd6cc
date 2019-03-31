@@ -1,0 +1,9 @@
+
+public class abstract_first {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		car car_one = new policeCar();
+	}
+
+}

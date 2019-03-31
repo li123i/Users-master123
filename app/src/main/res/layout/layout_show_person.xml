@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/linear_person"
+    android:orientation="vertical">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#eee"
+    android:text="ihwcow"
+    android:textSize="20sp"
+    android:layout_marginTop="5dp"
+    android:id="@+id/show_personal"/>
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="完成订单"
+        android:layout_marginLeft="30dp"
+        android:id="@+id/image_OK_person"
+        android:textSize="18sp"
+        tools:ignore="InvalidId" />
+
+    <Button
+        android:id="@+id/image_cancel_person"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="删除订单"
+        android:layout_marginLeft="120dp"
+        android:textSize="18sp" />
+</LinearLayout>
+
+</LinearLayout>
+

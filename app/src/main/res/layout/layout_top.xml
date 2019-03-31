@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#94c2df"
+    android:orientation="horizontal">
+
+    <Button
+        android:layout_width="58dp"
+        android:layout_height="50dp"
+        android:layout_gravity="left"
+        android:layout_marginTop="-3dp"
+        android:id="@+id/reback"
+        android:background="@drawable/reback" />
+
+    <TextView
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="代购特产信息"
+        android:textSize="18sp"
+        android:layout_gravity="center_horizontal"/>
+
+    <Button
+        android:layout_width="60dp"
+        android:layout_height="54dp"
+        android:layout_gravity="right"
+        android:layout_marginTop="-5dp"
+        android:id="@+id/have_new"
+        android:background="@drawable/havenew"
+        android:textSize="18sp"
+        tools:ignore="InvalidId" />
+</FrameLayout>

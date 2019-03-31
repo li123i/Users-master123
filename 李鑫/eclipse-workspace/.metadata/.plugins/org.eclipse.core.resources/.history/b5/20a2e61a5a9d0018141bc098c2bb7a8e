@@ -1,0 +1,17 @@
+package test;
+
+import java.util.Arrays;
+
+public class test {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String name[]=new String []{
+			"1234","name","ADGA","seef"
+		};
+		Arrays.sort(name);
+		int l=name.length;
+		System.out.println(l);
+	}
+
+}

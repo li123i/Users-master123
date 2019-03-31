@@ -1,0 +1,18 @@
+package test;
+
+import java.util.Arrays;
+
+public class test {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String name[]=new String []{
+			"李鑫","李广才","韩丽","李雪琪","吴秀波"
+		};
+		Arrays.sort(name);
+		System.out.println(Arrays.asList(name));
+		int l=Arrays.binarySearch(name, "李广才"); 
+		System.out.println(l);
+	}
+
+}
